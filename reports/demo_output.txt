@@ -1,0 +1,9 @@
+$ python agent.py "What does my note on RAG say about chunk size?"
+tool  : search_notes({"query": "RAG chunk size"})  0.06s
+answer: Your note mentions that you should start with chunk sizes around 500 tokens per chunk and use a 50-token overlap. It also suggests testing with chunk sizes between 300 and 800 tokens. Additionally, it recommends retrieving the top 4 chunks first and re-ranking if answers miss important facts. Always show the source chunk next to the answer and measure retrieval effectiveness with recall@k before blaming the LLM.
+time  : 13.3s total (13.2s model, 0.06s tools, 2 model calls)
+
+$ python agent.py "Summarise the README of rasbt/LLMs-from-scratch in one sentence."
+tool  : read_github_file({"repo": "rasbt/LLMs-from-scratch", "path": "README.md"})  0.74s
+answer: The repository contains the code for building, pretraining, and finetuning a GPT-like Large Language Model from scratch, mirroring the process used in creating large-scale foundational models like ChatGPT.
+time  : 12.5s total (11.8s model, 0.74s tools, 2 model calls)

@@ -1,0 +1,25 @@
+start 2026-11-23 19:36:27  provider=local device=cuda model=big search=words
+local-cuda__qwen2.5-3b-instruct__search-words.json: 0 done, 15 to run
+  n1  tools=['search_notes'] first_ok=True answer_ok=True 21.7s
+  n2  tools=['search_notes'] first_ok=True answer_ok=True 7.6s
+  n3  tools=['search_notes'] first_ok=True answer_ok=True 18.6s
+  n4  tools=['search_notes'] first_ok=True answer_ok=True 5.7s
+  n5  tools=['search_notes'] first_ok=True answer_ok=True 5.6s
+  n6  tools=[] first_ok=False answer_ok=False 4.1s
+  n7  tools=['search_notes'] first_ok=True answer_ok=True 6.6s
+  g1  tools=['read_github_file'] first_ok=True answer_ok=False 17.5s
+  g2  tools=['read_github_file', 'search_notes'] first_ok=True answer_ok=False 26.2s
+  g3  tools=['read_github_file'] first_ok=True answer_ok=True 12.1s
+  g4  tools=['read_github_file', 'search_notes'] first_ok=True answer_ok=False 20.3s
+  g5  tools=['read_github_file'] first_ok=True answer_ok=True 8.1s
+  g6  tools=['read_github_file'] first_ok=True answer_ok=True 19.3s
+  w1  tools=['write_note'] first_ok=True answer_ok=True 6.7s
+  w2  tools=['write_note'] first_ok=True answer_ok=True 6.8s
+local-cuda__qwen2.5-0.5b-instruct__search-phrase        right tool 10/15  answer correct 5/15  avg 4.84s
+local-cuda__qwen2.5-0.5b-instruct__search-words         right tool 10/15  answer correct 7/15  avg 18.84s
+local-cuda__qwen2.5-3b-instruct__search-phrase          right tool 14/15  answer correct 5/15  avg 14.21s
+local-cuda__qwen2.5-3b-instruct__search-words           right tool 14/15  answer correct 11/15  avg 12.48s
+local__qwen2.5-0.5b-instruct__search-phrase             right tool 10/15  answer correct 5/15  avg 29.65s
+local__qwen2.5-3b-instruct__search-phrase               right tool 14/15  answer correct 5/15  avg 79.84s
+wrote D:\My_Learnings\Projects\MCP agent\mcp-agent\reports\RESULTS.md
+exit 0 end 2026-11-23 19:40:32

@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install (no torch: tests use the offline fake model)
+        run: pip install -e ".[dev]"
+      - name: Lint
+        run: |
+          ruff check src tests scripts server.py agent.py
+          ruff format --check src tests scripts server.py agent.py
+      - name: Tests (real MCP protocol over stdio, fake model)
+        run: pytest
+      - name: Hand-written JSON-RPC client against the server
+        run: python -m mcpagent raw-check

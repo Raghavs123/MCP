@@ -1,0 +1,572 @@
+{
+ "n1": {
+  "task": {
+   "id": "n1",
+   "tool": "search_notes",
+   "question": "What does my note on RAG say about chunk size?",
+   "answer_contains_any": [
+    "500"
+   ]
+  },
+  "result": {
+   "answer": "The search did not find any notes specifically about RAG and chunk size. Could it be possible that you might have written about it in another context or under a different title?",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "RAG chunk size"
+     },
+     "seconds": 0.009398000000146567,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 48.4082257,
+   "llm_seconds": 48.39467400000012,
+   "tool_seconds": 0.009394400000019232,
+   "input_tokens": 879,
+   "output_tokens": 59
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n2": {
+  "task": {
+   "id": "n2",
+   "tool": "search_notes",
+   "question": "According to my notes, which transports can an MCP server use?",
+   "answer_contains_any": [
+    "stdio"
+   ]
+  },
+  "result": {
+   "answer": "Unfortunately, based on the notes available, there doesn't seem to be any information about the transports an MCP server can use. Could it be possible that this information is not documented in the notes I have access to?",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "MCP server transports"
+     },
+     "seconds": 0.009216899999955785,
+     "result_preview": "No matches."
+    },
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "MCP server"
+     },
+     "seconds": 0.007057199999962904,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 3,
+   "stopped": false,
+   "seconds": 88.89738609999995,
+   "llm_seconds": 88.87734520000004,
+   "tool_seconds": 0.016268899999886344,
+   "input_tokens": 1417,
+   "output_tokens": 121
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "search_notes",
+   "search_notes"
+  ]
+ },
+ "n3": {
+  "task": {
+   "id": "n3",
+   "tool": "search_notes",
+   "question": "What do my notes say I must never do in a stdio MCP server?",
+   "answer_contains_any": [
+    "print"
+   ]
+  },
+  "result": {
+   "answer": "It seems there are no notes found that specifically mention what you must never do in a stdio MCP server. Could it be possible that the information is stored elsewhere? Perhaps we can look into other sources.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "stdio MCP server never do"
+     },
+     "seconds": 0.009115199999996548,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 53.542689399999745,
+   "llm_seconds": 53.52968099999953,
+   "tool_seconds": 0.00910569999996369,
+   "input_tokens": 888,
+   "output_tokens": 66
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n4": {
+  "task": {
+   "id": "n4",
+   "tool": "search_notes",
+   "question": "How many tables does the Chinook database have, according to my SQL note?",
+   "answer_contains_any": [
+    "11",
+    "eleven"
+   ]
+  },
+  "result": {
+   "answer": "The search did not find any notes related to the number of tables in the Chinook database. You might want to check your notes or try searching again.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "Chinook database tables"
+     },
+     "seconds": 0.008589200000187702,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 48.13307020000002,
+   "llm_seconds": 48.120718300000135,
+   "tool_seconds": 0.008587400000124035,
+   "input_tokens": 888,
+   "output_tokens": 56
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n5": {
+  "task": {
+   "id": "n5",
+   "tool": "search_notes",
+   "question": "Which method do my interview notes recommend for behavioural questions?",
+   "answer_contains_any": [
+    "STAR"
+   ]
+  },
+  "result": {
+   "answer": "The search did not find any notes specifically about interview techniques for behavioural questions. Could you provide more details or check if there's a different topic mentioned in your notes?",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "interview notes behavioural questions"
+     },
+     "seconds": 0.008412899999711954,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 48.001285199999984,
+   "llm_seconds": 47.95940540000038,
+   "tool_seconds": 0.008410899999944377,
+   "input_tokens": 878,
+   "output_tokens": 58
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n6": {
+  "task": {
+   "id": "n6",
+   "tool": "search_notes",
+   "question": "What kind of base image does my Docker note recommend?",
+   "answer_contains_any": [
+    "slim"
+   ]
+  },
+  "result": {
+   "answer": "I don't have direct access to your Docker notes. Could you please provide me with the title or the content of the relevant note so I can search for it?",
+   "tools_used": [],
+   "steps": 1,
+   "stopped": false,
+   "seconds": 25.997823499999868,
+   "llm_seconds": 25.993807399999696,
+   "tool_seconds": 0.0,
+   "input_tokens": 417,
+   "output_tokens": 34
+  },
+  "right_tool_first": false,
+  "right_tool_any": false,
+  "answer_correct": false,
+  "tools_called": []
+ },
+ "n7": {
+  "task": {
+   "id": "n7",
+   "tool": "search_notes",
+   "question": "How many verdicts of an LLM judge do my evaluation notes say I should read by hand?",
+   "answer_contains_any": [
+    "10",
+    "ten"
+   ]
+  },
+  "result": {
+   "answer": "It seems there are no mentions of the number of verdicts you should read by hand in your notes. Could you provide more details or check if the wording is slightly different?",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "verdicts judge read by hand"
+     },
+     "seconds": 0.008441199999651872,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 48.240387400000145,
+   "llm_seconds": 48.22794590000058,
+   "tool_seconds": 0.00843929999973625,
+   "input_tokens": 898,
+   "output_tokens": 62
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "g1": {
+  "task": {
+   "id": "g1",
+   "tool": "read_github_file",
+   "question": "What is the ISBN of the book in the GitHub repo rasbt/LLMs-from-scratch?",
+   "answer_contains_any": [
+    "9781633437166",
+    "978-1633437166"
+   ]
+  },
+  "result": {
+   "answer": "The requested file could not be found in the repository. Please ensure the correct path and that the file exists. If you have any more details about where the ISBN might be located, feel free to share!",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "rasbt/LLMs-from-scratch",
+      "path": "content/file_with_isbn.txt"
+     },
+     "seconds": 0.8606889999996383,
+     "result_preview": "Error 404"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 95.94223050000028,
+   "llm_seconds": 95.07758570000033,
+   "tool_seconds": 0.860687599999892,
+   "input_tokens": 978,
+   "output_tokens": 146
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "g2": {
+  "task": {
+   "id": "g2",
+   "tool": "read_github_file",
+   "question": "In the GitHub repo rasbt/LLMs-from-scratch, what is chapter 4 about?",
+   "answer_contains_any": [
+    "GPT model",
+    "GPT Model"
+   ]
+  },
+  "result": {
+   "answer": "Unfortunately, neither the specific file nor any relevant information about chapter 4 could be found in my notes or the GitHub repository. Could you please provide more details or check if there might have been a mistake in the search term?",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "rasbt/LLMs-from-scratch",
+      "path": "chapter_4"
+     },
+     "seconds": 15.73179459999983,
+     "result_preview": "Error 404"
+    },
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "rasbt/LLMs-from-scratch chapter 4"
+     },
+     "seconds": 0.0076058999998167565,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 3,
+   "stopped": false,
+   "seconds": 119.8325818999997,
+   "llm_seconds": 104.08920820000003,
+   "tool_seconds": 15.739396999999826,
+   "input_tokens": 1480,
+   "output_tokens": 145
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "read_github_file",
+   "search_notes"
+  ]
+ },
+ "g3": {
+  "task": {
+   "id": "g3",
+   "tool": "read_github_file",
+   "question": "The README of the GitHub repo karpathy/nanoGPT mentions a newer cousin project. What is it called?",
+   "answer_contains_any": [
+    "nanochat"
+   ]
+  },
+  "result": {
+   "answer": "The newer cousin project mentioned in the README of the GitHub repo karpathy/nanoGPT is called [nanochat](https://github.com/karpathy/nanochat).",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "karpathy/nanoGPT",
+      "path": "README.md"
+     },
+     "seconds": 15.986094200000025,
+     "result_preview": "\n# nanoGPT\n\n![nanoGPT](assets/nanogpt.jpg)\n\n\n---\n\n**Update Nov 2025** nanoGPT has a new and improved cousin called [nanochat](https://github.com/karpathy/nanochat). It is very likely you meant to use/"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 109.74043000000029,
+   "llm_seconds": 93.75010800000018,
+   "tool_seconds": 15.986091700000088,
+   "input_tokens": 2505,
+   "output_tokens": 75
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "g4": {
+  "task": {
+   "id": "g4",
+   "tool": "read_github_file",
+   "question": "What context size does the Shakespeare character-level example in the GitHub repo karpathy/nanoGPT use?",
+   "answer_contains_any": [
+    "256"
+   ]
+  },
+  "result": {
+   "answer": "Unfortunately, neither the GitHub repository nor my notes contain information about the context size used for the Shakespeare character-level example in nanoGPT. We might need to look elsewhere or contact the repository maintainer for this specific detail.",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "karpathy/nanoGPT",
+      "path": "examples/shakespeare/README.md"
+     },
+     "seconds": 15.76770710000028,
+     "result_preview": "Error 404"
+    },
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "Shakespeare character-level example context size"
+     },
+     "seconds": 0.006356800000048679,
+     "result_preview": "No matches."
+    }
+   ],
+   "steps": 3,
+   "stopped": false,
+   "seconds": 116.27188700000033,
+   "llm_seconds": 100.49338050000051,
+   "tool_seconds": 15.774060600000212,
+   "input_tokens": 1481,
+   "output_tokens": 137
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "read_github_file",
+   "search_notes"
+  ]
+ },
+ "g5": {
+  "task": {
+   "id": "g5",
+   "tool": "read_github_file",
+   "question": "Which Python version does the README of the GitHub repo modelcontextprotocol/python-sdk require?",
+   "answer_contains_any": [
+    "3.11"
+   ]
+  },
+  "result": {
+   "answer": "The README requires Python 3.11+.",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "modelcontextprotocol/python-sdk",
+      "path": "README.md"
+     },
+     "seconds": 15.70270870000013,
+     "result_preview": "# MCP Python SDK\n\n<div align=\"center\">\n\n<strong>Python implementation of the Model Context Protocol (MCP)</strong>\n\n[![PyPI][pypi-badge]][pypi-url]\n[![MIT licensed][mit-badge]][mit-url]\n[![Python Vers"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 82.2170030000002,
+   "llm_seconds": 66.51083749999952,
+   "tool_seconds": 15.70270649999975,
+   "input_tokens": 2073,
+   "output_tokens": 44
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "g6": {
+  "task": {
+   "id": "g6",
+   "tool": "read_github_file",
+   "question": "According to the README of the GitHub repo lerocha/chinook-database, why is it called Chinook?",
+   "answer_contains_any": [
+    "wind"
+   ]
+  },
+  "result": {
+   "answer": "According to the README, the Chinook database was named after the Northwind database, and the name \"Chinook\" refers to winds in the interior West of North America. Specifically, it states:\n\n\"### Why the name Chinook?\nThe name of this sample database was based on the Northwind database. Chinooks are winds in the interior West of North America, where the Canadian Prairies and Great Plains meet various mountain ranges. Chinooks are most prevalent over southern Alberta in Canada. Chinook is a good name choice for a database that intents to be an alternative to Northwind.\"",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "lerocha/chinook-database",
+      "path": "README.md"
+     },
+     "seconds": 15.800373399999899,
+     "result_preview": "## Chinook Database\n\nChinook is a sample database available for SQL Server, Oracle, MySQL, etc. It can be created by running a single SQL script. Chinook database is an alternative to the Northwind da"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 143.23719429999983,
+   "llm_seconds": 127.43291439999985,
+   "tool_seconds": 15.800371300000279,
+   "input_tokens": 1655,
+   "output_tokens": 156
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "w1": {
+  "task": {
+   "id": "w1",
+   "tool": "write_note",
+   "question": "Save a new note called standup that says: Finish the MCP agent README by Friday.",
+   "note_contains": {
+    "title": "standup",
+    "text": "Friday"
+   }
+  },
+  "result": {
+   "answer": "You've saved a new note titled 'standup' with the given text.",
+   "tools_used": [
+    {
+     "name": "write_note",
+     "arguments": {
+      "title": "standup",
+      "text": "Finish the MCP agent README by Friday."
+     },
+     "seconds": 0.007145499999751337,
+     "result_preview": "Saved standup.md."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 63.82865470000024,
+   "llm_seconds": 63.81665789999988,
+   "tool_seconds": 0.007143999999698281,
+   "input_tokens": 904,
+   "output_tokens": 51
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "write_note"
+  ]
+ },
+ "w2": {
+  "task": {
+   "id": "w2",
+   "tool": "write_note",
+   "question": "Write a note named gpu-plan with the text: Try the GPU run after the CPU baseline.",
+   "note_contains": {
+    "title": "gpu-plan",
+    "text": "GPU"
+   }
+  },
+  "result": {
+   "answer": "You've successfully saved the note titled `gpu-plan` with the specified text.",
+   "tools_used": [
+    {
+     "name": "write_note",
+     "arguments": {
+      "title": "gpu-plan",
+      "text": "Try the GPU run after the CPU baseline."
+     },
+     "seconds": 0.05009569999992891,
+     "result_preview": "Saved gpu-plan.md."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 105.30977369999982,
+   "llm_seconds": 105.25528980000081,
+   "tool_seconds": 0.050092599999970844,
+   "input_tokens": 907,
+   "output_tokens": 52
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "write_note"
+  ]
+ }
+}

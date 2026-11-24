@@ -1,0 +1,21 @@
+start 2026-11-23 18:57:37  provider=local model=big search=phrase
+local__qwen2.5-3b-instruct__search-phrase.json: 0 done, 15 to run
+  n1  tools=['search_notes'] first_ok=True answer_ok=False 48.4s
+  n2  tools=['search_notes', 'search_notes'] first_ok=True answer_ok=False 88.9s
+  n3  tools=['search_notes'] first_ok=True answer_ok=False 53.5s
+  n4  tools=['search_notes'] first_ok=True answer_ok=False 48.1s
+  n5  tools=['search_notes'] first_ok=True answer_ok=False 48.0s
+  n6  tools=[] first_ok=False answer_ok=False 26.0s
+  n7  tools=['search_notes'] first_ok=True answer_ok=False 48.2s
+  g1  tools=['read_github_file'] first_ok=True answer_ok=False 95.9s
+  g2  tools=['read_github_file', 'search_notes'] first_ok=True answer_ok=False 119.8s
+  g3  tools=['read_github_file'] first_ok=True answer_ok=True 109.7s
+  g4  tools=['read_github_file', 'search_notes'] first_ok=True answer_ok=False 116.3s
+  g5  tools=['read_github_file'] first_ok=True answer_ok=True 82.2s
+  g6  tools=['read_github_file'] first_ok=True answer_ok=True 143.2s
+  w1  tools=['write_note'] first_ok=True answer_ok=True 63.8s
+  w2  tools=['write_note'] first_ok=True answer_ok=True 105.3s
+local__qwen2.5-0.5b-instruct__search-phrase             right tool 10/15  answer correct 5/15  avg 29.65s
+local__qwen2.5-3b-instruct__search-phrase               right tool 14/15  answer correct 5/15  avg 79.84s
+wrote D:\My_Learnings\Projects\MCP agent\mcp-agent\reports\RESULTS.md
+exit 0 end 2026-11-23 19:18:03

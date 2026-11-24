@@ -1,0 +1,20 @@
+start 2026-11-23 18:49:53  provider=local model=small search=phrase
+local__qwen2.5-0.5b-instruct__search-phrase.json: 0 done, 15 to run
+  n1  tools=['search_notes'] first_ok=True answer_ok=False 7.4s
+  n2  tools=['search_notes'] first_ok=True answer_ok=False 8.2s
+  n3  tools=['search_notes'] first_ok=True answer_ok=False 6.8s
+  n4  tools=[] first_ok=False answer_ok=False 5.2s
+  n5  tools=[] first_ok=False answer_ok=False 6.7s
+  n6  tools=[] first_ok=False answer_ok=False 6.9s
+  n7  tools=[] first_ok=False answer_ok=False 9.8s
+  g1  tools=['read_github_file', 'search_notes'] first_ok=True answer_ok=False 164.9s
+  g2  tools=['read_github_file'] first_ok=True answer_ok=False 80.8s
+  g3  tools=['read_github_file'] first_ok=True answer_ok=True 94.2s
+  g4  tools=[] first_ok=False answer_ok=False 6.6s
+  g5  tools=['read_github_file'] first_ok=True answer_ok=True 14.1s
+  g6  tools=['read_github_file'] first_ok=True answer_ok=True 16.7s
+  w1  tools=['write_note'] first_ok=True answer_ok=True 7.9s
+  w2  tools=['write_note'] first_ok=True answer_ok=True 8.7s
+local__qwen2.5-0.5b-instruct__search-phrase             right tool 10/15  answer correct 5/15  avg 29.65s
+wrote D:\My_Learnings\Projects\MCP agent\mcp-agent\reports\RESULTS.md
+exit 0 end 2026-11-23 18:57:37

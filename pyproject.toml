@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-agent"
+version = "1.0.0"
+description = "An MCP server with notes and GitHub tools, an LLM agent that uses it, and a measurement of how often it picks the right tool."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Your Name" }]
+keywords = ["mcp", "model-context-protocol", "llm", "agent", "tool-calling", "gemini"]
+dependencies = [
+  "mcp[cli]>=1.27,<2",
+  "openai>=1.50",
+  "python-dotenv>=1.0",
+  "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+local = ["torch>=2.4", "transformers>=4.45"]
+demo = ["pillow>=10.0"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+mcpagent = "mcpagent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcpagent"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["SIM117", "SIM108"]  # nested "async with" blocks read like the MCP docs
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

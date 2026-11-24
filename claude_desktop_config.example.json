@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "notes-and-github": {
+      "command": "C:\path\to\mcp-agent\.venv\Scripts\python.exe",
+      "args": ["C:\path\to\mcp-agent\server.py"]
+    }
+  }
+}

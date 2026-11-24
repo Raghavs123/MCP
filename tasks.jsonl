@@ -1,0 +1,15 @@
+{"id": "n1", "tool": "search_notes", "question": "What does my note on RAG say about chunk size?", "answer_contains_any": ["500"]}
+{"id": "n2", "tool": "search_notes", "question": "According to my notes, which transports can an MCP server use?", "answer_contains_any": ["stdio"]}
+{"id": "n3", "tool": "search_notes", "question": "What do my notes say I must never do in a stdio MCP server?", "answer_contains_any": ["print"]}
+{"id": "n4", "tool": "search_notes", "question": "How many tables does the Chinook database have, according to my SQL note?", "answer_contains_any": ["11", "eleven"]}
+{"id": "n5", "tool": "search_notes", "question": "Which method do my interview notes recommend for behavioural questions?", "answer_contains_any": ["STAR"]}
+{"id": "n6", "tool": "search_notes", "question": "What kind of base image does my Docker note recommend?", "answer_contains_any": ["slim"]}
+{"id": "n7", "tool": "search_notes", "question": "How many verdicts of an LLM judge do my evaluation notes say I should read by hand?", "answer_contains_any": ["10", "ten"]}
+{"id": "g1", "tool": "read_github_file", "question": "What is the ISBN of the book in the GitHub repo rasbt/LLMs-from-scratch?", "answer_contains_any": ["9781633437166", "978-1633437166"]}
+{"id": "g2", "tool": "read_github_file", "question": "In the GitHub repo rasbt/LLMs-from-scratch, what is chapter 4 about?", "answer_contains_any": ["GPT model", "GPT Model"]}
+{"id": "g3", "tool": "read_github_file", "question": "The README of the GitHub repo karpathy/nanoGPT mentions a newer cousin project. What is it called?", "answer_contains_any": ["nanochat"]}
+{"id": "g4", "tool": "read_github_file", "question": "What context size does the Shakespeare character-level example in the GitHub repo karpathy/nanoGPT use?", "answer_contains_any": ["256"]}
+{"id": "g5", "tool": "read_github_file", "question": "Which Python version does the README of the GitHub repo modelcontextprotocol/python-sdk require?", "answer_contains_any": ["3.11"]}
+{"id": "g6", "tool": "read_github_file", "question": "According to the README of the GitHub repo lerocha/chinook-database, why is it called Chinook?", "answer_contains_any": ["wind"]}
+{"id": "w1", "tool": "write_note", "question": "Save a new note called standup that says: Finish the MCP agent README by Friday.", "note_contains": {"title": "standup", "text": "Friday"}}
+{"id": "w2", "tool": "write_note", "question": "Write a note named gpu-plan with the text: Try the GPU run after the CPU baseline.", "note_contains": {"title": "gpu-plan", "text": "GPU"}}

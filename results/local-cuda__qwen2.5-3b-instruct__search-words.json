@@ -1,0 +1,563 @@
+{
+ "n1": {
+  "task": {
+   "id": "n1",
+   "tool": "search_notes",
+   "question": "What does my note on RAG say about chunk size?",
+   "answer_contains_any": [
+    "500"
+   ]
+  },
+  "result": {
+   "answer": "Your note mentions that you should start with chunk sizes around 500 tokens per chunk and use a 50-token overlap. It also suggests testing with chunk sizes between 300 and 800 tokens. Additionally, it recommends retrieving the top 4 chunks first and re-ranking if answers miss important facts. Always show the source chunk next to the answer and measure retrieval effectiveness with recall@k before blaming the LLM.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "RAG chunk size"
+     },
+     "seconds": 0.021548400000028778,
+     "result_preview": "rag.md: - Chunk size: start with about 500 tokens per chunk and a 50-token overlap; test 300 to 800.\nrag.md: - Retrieve the top 4 chunks first, then re-rank if answers miss facts.\nrag.md: - Always sho"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 21.72027100000014,
+   "llm_seconds": 21.688572199999726,
+   "tool_seconds": 0.021541299999626062,
+   "input_tokens": 963,
+   "output_tokens": 113
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n2": {
+  "task": {
+   "id": "n2",
+   "tool": "search_notes",
+   "question": "According to my notes, which transports can an MCP server use?",
+   "answer_contains_any": [
+    "stdio"
+   ]
+  },
+  "result": {
+   "answer": "The MCP server can use two types of transports according to your notes:\n\n1. **stdio** for local servers.\n2. **streamable HTTP** for remote servers.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "MCP server transports"
+     },
+     "seconds": 0.00895109999964916,
+     "result_preview": "mcp.md: - Transports: stdio for local servers, streamable HTTP for remote servers.\nmcp.md: - Three roles: host (the app), client (one per server), server (exposes tools).\nmcp.md: - A server can expose"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 7.601171700000123,
+   "llm_seconds": 7.587451999999757,
+   "tool_seconds": 0.00894830000015645,
+   "input_tokens": 986,
+   "output_tokens": 58
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n3": {
+  "task": {
+   "id": "n3",
+   "tool": "search_notes",
+   "question": "What do my notes say I must never do in a stdio MCP server?",
+   "answer_contains_any": [
+    "print"
+   ]
+  },
+  "result": {
+   "answer": "Your notes indicate that in a stdio MCP server:\n\n- You must never use `print()` as it sends data to `stdout`, which is part of the protocol. Instead, log to `stderr`.\n- For transports, use `stdio` for local servers and `streamable HTTP` for remote servers.\n- The roles in an MCP include a host (your application), clients (one per server), and a server (which exposes tools, resources, and prompts).\n- A single server can work with any MCP client such as Claude Desktop, IDEs, or your own agent.\n- Additionally, you should avoid committing `.env` files or API keys to your repository.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "stdio MCP server never do"
+     },
+     "seconds": 0.009158799999568146,
+     "result_preview": "mcp.md: - Never use print() in a stdio server: stdout carries the protocol. Log to stderr.\nmcp.md: - Transports: stdio for local servers, streamable HTTP for remote servers.\nmcp.md: - Three roles: hos"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 18.62290209999992,
+   "llm_seconds": 18.608902099999796,
+   "tool_seconds": 0.009157399999821791,
+   "input_tokens": 1047,
+   "output_tokens": 160
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n4": {
+  "task": {
+   "id": "n4",
+   "tool": "search_notes",
+   "question": "How many tables does the Chinook database have, according to my SQL note?",
+   "answer_contains_any": [
+    "11",
+    "eleven"
+   ]
+  },
+  "result": {
+   "answer": "According to your SQL note, the Chinook sample database has 11 tables.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "Chinook database tables"
+     },
+     "seconds": 0.03476689999934024,
+     "result_preview": "sql.md: - The Chinook sample database has 11 tables (artists, albums, tracks, invoices, customers ...)."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 5.745256000000154,
+   "llm_seconds": 5.705364499999632,
+   "tool_seconds": 0.034765299999889976,
+   "input_tokens": 911,
+   "output_tokens": 42
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n5": {
+  "task": {
+   "id": "n5",
+   "tool": "search_notes",
+   "question": "Which method do my interview notes recommend for behavioural questions?",
+   "answer_contains_any": [
+    "STAR"
+   ]
+  },
+  "result": {
+   "answer": "The interview notes recommend using the STAR method for answering behavioural questions during interviews.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "interview notes behavioural questions"
+     },
+     "seconds": 0.008753199999773642,
+     "result_preview": "interview-prep.md: - Answer behavioural questions with the STAR method: Situation, Task, Action, Result.\ninterview-prep.md: - Ask two questions at the end of every interview.\ninterview-prep.md: - Prep"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 5.633597699999882,
+   "llm_seconds": 5.620744900000318,
+   "tool_seconds": 0.008751700000175333,
+   "input_tokens": 989,
+   "output_tokens": 40
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "n6": {
+  "task": {
+   "id": "n6",
+   "tool": "search_notes",
+   "question": "What kind of base image does my Docker note recommend?",
+   "answer_contains_any": [
+    "slim"
+   ]
+  },
+  "result": {
+   "answer": "I don't have direct access to your Docker notes. Could you please provide me with the title or the content of the relevant note so I can search for it?",
+   "tools_used": [],
+   "steps": 1,
+   "stopped": false,
+   "seconds": 4.146633500000462,
+   "llm_seconds": 4.14379050000025,
+   "tool_seconds": 0.0,
+   "input_tokens": 417,
+   "output_tokens": 34
+  },
+  "right_tool_first": false,
+  "right_tool_any": false,
+  "answer_correct": false,
+  "tools_called": []
+ },
+ "n7": {
+  "task": {
+   "id": "n7",
+   "tool": "search_notes",
+   "question": "How many verdicts of an LLM judge do my evaluation notes say I should read by hand?",
+   "answer_contains_any": [
+    "10",
+    "ten"
+   ]
+  },
+  "result": {
+   "answer": "According to your evaluation notes, you should read at least 10 verdicts of an LLM judge by hand.",
+   "tools_used": [
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "verdicts judge read by hand"
+     },
+     "seconds": 0.007107499999619904,
+     "result_preview": "llm-eval.md: - Check an LLM judge by hand: read at least 10 of its verdicts."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 6.602292800000214,
+   "llm_seconds": 6.591577800000778,
+   "tool_seconds": 0.007106000000021595,
+   "input_tokens": 921,
+   "output_tokens": 51
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "search_notes"
+  ]
+ },
+ "g1": {
+  "task": {
+   "id": "g1",
+   "tool": "read_github_file",
+   "question": "What is the ISBN of the book in the GitHub repo rasbt/LLMs-from-scratch?",
+   "answer_contains_any": [
+    "9781633437166",
+    "978-1633437166"
+   ]
+  },
+  "result": {
+   "answer": "The requested file could not be found in the repository. Please ensure the correct path and that the file exists. If you have any more details about where the ISBN might be located, feel free to share!",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "rasbt/LLMs-from-scratch",
+      "path": "content/file_with_isbn.txt"
+     },
+     "seconds": 0.881019199999173,
+     "result_preview": "Error 404"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 17.50256999999965,
+   "llm_seconds": 16.61763769999925,
+   "tool_seconds": 0.8810177999994266,
+   "input_tokens": 978,
+   "output_tokens": 146
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "g2": {
+  "task": {
+   "id": "g2",
+   "tool": "read_github_file",
+   "question": "In the GitHub repo rasbt/LLMs-from-scratch, what is chapter 4 about?",
+   "answer_contains_any": [
+    "GPT model",
+    "GPT Model"
+   ]
+  },
+  "result": {
+   "answer": "Based on the notes I found, it looks like chapter 4 discusses evaluation methods for language models. Specifically, it mentions:\n\n- Checking an LLM judge by hand: reading at least 10 of its verdicts.\n- Keeping a hold-out set and never tuning on the test questions.\n- Reporting the measurement method next to every number.\n- Being aware that equal totals can hide poor answer-by-answer agreement.\n- Measuring retrieval with recall@k before blaming the LLM. \n\nThis information might be relevant to understanding what was covered in chapter 4 of the LLMs-from-scratch book.",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "rasbt/LLMs-from-scratch",
+      "path": "chapter_4"
+     },
+     "seconds": 0.5960200999998051,
+     "result_preview": "Error 404"
+    },
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "rasbt/LLMs-from-scratch chapter 4"
+     },
+     "seconds": 0.00836170000002312,
+     "result_preview": "llm-eval.md: - Check an LLM judge by hand: read at least 10 of its verdicts.\nllm-eval.md: - Keep a hold-out set and never tune on the test questions.\nllm-eval.md: - Report the measurement method next "
+    }
+   ],
+   "steps": 3,
+   "stopped": false,
+   "seconds": 26.195902899999965,
+   "llm_seconds": 25.587507600000208,
+   "tool_seconds": 0.6043794999995953,
+   "input_tokens": 1572,
+   "output_tokens": 222
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "read_github_file",
+   "search_notes"
+  ]
+ },
+ "g3": {
+  "task": {
+   "id": "g3",
+   "tool": "read_github_file",
+   "question": "The README of the GitHub repo karpathy/nanoGPT mentions a newer cousin project. What is it called?",
+   "answer_contains_any": [
+    "nanochat"
+   ]
+  },
+  "result": {
+   "answer": "The newer cousin project mentioned in the README of the GitHub repo karpathy/nanoGPT is called [nanochat](https://github.com/karpathy/nanochat).",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "karpathy/nanoGPT",
+      "path": "README.md"
+     },
+     "seconds": 0.3029129999995348,
+     "result_preview": "\n# nanoGPT\n\n![nanoGPT](assets/nanogpt.jpg)\n\n\n---\n\n**Update Nov 2025** nanoGPT has a new and improved cousin called [nanochat](https://github.com/karpathy/nanochat). It is very likely you meant to use/"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 12.146935599999779,
+   "llm_seconds": 11.839562900000601,
+   "tool_seconds": 0.3029116999996404,
+   "input_tokens": 2505,
+   "output_tokens": 75
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "g4": {
+  "task": {
+   "id": "g4",
+   "tool": "read_github_file",
+   "question": "What context size does the Shakespeare character-level example in the GitHub repo karpathy/nanoGPT use?",
+   "answer_contains_any": [
+    "256"
+   ]
+  },
+  "result": {
+   "answer": "The search did not yield the exact information you were looking for regarding the context size used in the Shakespeare character-level example. However, I found some related notes. The relevant part mentions chunk sizes, but it doesn't specify the context size for the Shakespeare example. You might want to check the full content of the docker.md or rag.md files for more details.",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "karpathy/nanoGPT",
+      "path": "examples/shakespeare/README.md"
+     },
+     "seconds": 0.7565635999999358,
+     "result_preview": "Error 404"
+    },
+    {
+     "name": "search_notes",
+     "arguments": {
+      "query": "Shakespeare character-level example context size"
+     },
+     "seconds": 0.009399300000040967,
+     "result_preview": "docker.md: - Use a slim base image, for example python:3.12-slim.\nrag.md: - Chunk size: start with about 500 tokens per chunk and a 50-token overlap; test 300 to 800."
+    }
+   ],
+   "steps": 3,
+   "stopped": false,
+   "seconds": 20.289363900000353,
+   "llm_seconds": 19.52006259999962,
+   "tool_seconds": 0.7659602999992785,
+   "input_tokens": 1535,
+   "output_tokens": 165
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": false,
+  "tools_called": [
+   "read_github_file",
+   "search_notes"
+  ]
+ },
+ "g5": {
+  "task": {
+   "id": "g5",
+   "tool": "read_github_file",
+   "question": "Which Python version does the README of the GitHub repo modelcontextprotocol/python-sdk require?",
+   "answer_contains_any": [
+    "3.11"
+   ]
+  },
+  "result": {
+   "answer": "The README requires Python 3.11+.",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "modelcontextprotocol/python-sdk",
+      "path": "README.md"
+     },
+     "seconds": 0.3459375000002183,
+     "result_preview": "# MCP Python SDK\n\n<div align=\"center\">\n\n<strong>Python implementation of the Model Context Protocol (MCP)</strong>\n\n[![PyPI][pypi-badge]][pypi-url]\n[![MIT licensed][mit-badge]][mit-url]\n[![Python Vers"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 8.104790200000025,
+   "llm_seconds": 7.755418499999905,
+   "tool_seconds": 0.34593580000000657,
+   "input_tokens": 2073,
+   "output_tokens": 44
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "g6": {
+  "task": {
+   "id": "g6",
+   "tool": "read_github_file",
+   "question": "According to the README of the GitHub repo lerocha/chinook-database, why is it called Chinook?",
+   "answer_contains_any": [
+    "wind"
+   ]
+  },
+  "result": {
+   "answer": "According to the README, the Chinook database was named after the Northwind database, and the name \"Chinook\" refers to winds in the interior West of North America. Specifically, it states:\n\n\"### Why the name Chinook?\nThe name of this sample database was based on the Northwind database. Chinooks are winds in the interior West of North America, where the Canadian Prairies and Great Plains meet various mountain ranges. Chinooks are most prevalent over southern Alberta in Canada. Chinook is a good name choice for a database that intents to be an alternative to Northwind.\"",
+   "tools_used": [
+    {
+     "name": "read_github_file",
+     "arguments": {
+      "repo": "lerocha/chinook-database",
+      "path": "README.md"
+     },
+     "seconds": 0.351406699999643,
+     "result_preview": "## Chinook Database\n\nChinook is a sample database available for SQL Server, Oracle, MySQL, etc. It can be created by running a single SQL script. Chinook database is an alternative to the Northwind da"
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 19.322848499999964,
+   "llm_seconds": 18.967874399999346,
+   "tool_seconds": 0.3514052000000447,
+   "input_tokens": 1655,
+   "output_tokens": 156
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "read_github_file"
+  ]
+ },
+ "w1": {
+  "task": {
+   "id": "w1",
+   "tool": "write_note",
+   "question": "Save a new note called standup that says: Finish the MCP agent README by Friday.",
+   "note_contains": {
+    "title": "standup",
+    "text": "Friday"
+   }
+  },
+  "result": {
+   "answer": "You've saved a new note titled 'standup' with the given text.",
+   "tools_used": [
+    {
+     "name": "write_note",
+     "arguments": {
+      "title": "standup",
+      "text": "Finish the MCP agent README by Friday."
+     },
+     "seconds": 0.007711600000220642,
+     "result_preview": "Saved standup.md."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 6.724966400000085,
+   "llm_seconds": 6.712852399999065,
+   "tool_seconds": 0.007710199999564793,
+   "input_tokens": 904,
+   "output_tokens": 51
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "write_note"
+  ]
+ },
+ "w2": {
+  "task": {
+   "id": "w2",
+   "tool": "write_note",
+   "question": "Write a note named gpu-plan with the text: Try the GPU run after the CPU baseline.",
+   "note_contains": {
+    "title": "gpu-plan",
+    "text": "GPU"
+   }
+  },
+  "result": {
+   "answer": "You've successfully saved the note titled `gpu-plan` with the specified text.",
+   "tools_used": [
+    {
+     "name": "write_note",
+     "arguments": {
+      "title": "gpu-plan",
+      "text": "Try the GPU run after the CPU baseline."
+     },
+     "seconds": 0.007161700000324345,
+     "result_preview": "Saved gpu-plan.md."
+    }
+   ],
+   "steps": 2,
+   "stopped": false,
+   "seconds": 6.776636700000381,
+   "llm_seconds": 6.766706999999769,
+   "tool_seconds": 0.00716030000057799,
+   "input_tokens": 907,
+   "output_tokens": 52
+  },
+  "right_tool_first": true,
+  "right_tool_any": true,
+  "answer_correct": true,
+  "tools_called": [
+   "write_note"
+  ]
+ }
+}

@@ -1,0 +1,110 @@
+[
+ {
+  "label": "local-cuda__qwen2.5-0.5b-instruct__search-phrase",
+  "n": 15,
+  "right_tool_first": 10,
+  "right_tool_any": 10,
+  "answer_correct": 5,
+  "stopped": 0,
+  "avg_steps": 1.73,
+  "avg_seconds": 4.84,
+  "avg_llm_seconds": 4.61,
+  "avg_tool_seconds": 0.23,
+  "avg_input_tokens": 1212.4,
+  "by_tool": {
+   "read_github_file": "5/6",
+   "search_notes": "3/7",
+   "write_note": "2/2"
+  }
+ },
+ {
+  "label": "local-cuda__qwen2.5-0.5b-instruct__search-words",
+  "n": 15,
+  "right_tool_first": 10,
+  "right_tool_any": 10,
+  "answer_correct": 7,
+  "stopped": 1,
+  "avg_steps": 1.87,
+  "avg_seconds": 18.84,
+  "avg_llm_seconds": 18.44,
+  "avg_tool_seconds": 0.4,
+  "avg_input_tokens": 1528.53,
+  "by_tool": {
+   "read_github_file": "5/6",
+   "search_notes": "3/7",
+   "write_note": "2/2"
+  }
+ },
+ {
+  "label": "local-cuda__qwen2.5-3b-instruct__search-phrase",
+  "n": 15,
+  "right_tool_first": 14,
+  "right_tool_any": 14,
+  "answer_correct": 5,
+  "stopped": 0,
+  "avg_steps": 2.13,
+  "avg_seconds": 14.21,
+  "avg_llm_seconds": 13.88,
+  "avg_tool_seconds": 0.32,
+  "avg_input_tokens": 1218.2,
+  "by_tool": {
+   "read_github_file": "6/6",
+   "search_notes": "6/7",
+   "write_note": "2/2"
+  }
+ },
+ {
+  "label": "local-cuda__qwen2.5-3b-instruct__search-words",
+  "n": 15,
+  "right_tool_first": 14,
+  "right_tool_any": 14,
+  "answer_correct": 11,
+  "stopped": 0,
+  "avg_steps": 2.07,
+  "avg_seconds": 12.48,
+  "avg_llm_seconds": 12.25,
+  "avg_tool_seconds": 0.22,
+  "avg_input_tokens": 1224.2,
+  "by_tool": {
+   "read_github_file": "6/6",
+   "search_notes": "6/7",
+   "write_note": "2/2"
+  }
+ },
+ {
+  "label": "local__qwen2.5-0.5b-instruct__search-phrase",
+  "n": 15,
+  "right_tool_first": 10,
+  "right_tool_any": 10,
+  "answer_correct": 5,
+  "stopped": 0,
+  "avg_steps": 1.73,
+  "avg_seconds": 29.65,
+  "avg_llm_seconds": 29.11,
+  "avg_tool_seconds": 0.53,
+  "avg_input_tokens": 1212.4,
+  "by_tool": {
+   "read_github_file": "5/6",
+   "search_notes": "3/7",
+   "write_note": "2/2"
+  }
+ },
+ {
+  "label": "local__qwen2.5-3b-instruct__search-phrase",
+  "n": 15,
+  "right_tool_first": 14,
+  "right_tool_any": 14,
+  "answer_correct": 5,
+  "stopped": 0,
+  "avg_steps": 2.13,
+  "avg_seconds": 79.84,
+  "avg_llm_seconds": 74.5,
+  "avg_tool_seconds": 5.33,
+  "avg_input_tokens": 1216.53,
+  "by_tool": {
+   "read_github_file": "6/6",
+   "search_notes": "6/7",
+   "write_note": "2/2"
+  }
+ }
+]
